@@ -187,6 +187,64 @@
 
 	/**/
 
+	.notify-me {
+		display: inline-block;
+		color: white;
+		margin: 0.2em 0 1em;
+		border: 0 none;
+		font-size: 1.6em;
+		font-weight: 100;
+	}
+
+	.notify-me div {
+		clear: both;
+	}
+
+	.notify-me p {
+		float: right;
+		margin: 0 0 0.3em;
+		max-width: 400px;
+	}
+
+	.notify-me button,
+	.notify-me input {
+		font-size: 1em;
+		font-family: inherit;
+		font-weight: 100;
+		line-height: 1em;
+		height: 2em;
+		box-sizing: border-box;
+		vertical-align: middle;
+	}
+
+	.notify-me input {
+		padding: 0.2em 0.6em;
+		background: white;
+		border: 3px solid #800;
+		margin: 0;
+		width: 13em;
+		background-clip: padding-box;
+	}
+
+	.notify-me input:hover {
+		border-color: #333;
+	}
+
+	.notify-me input:focus {
+		border-color: #F99;
+		outline: 0 none;
+	}
+
+	.notify-me button {
+		padding: 0.2em 1em;
+		color: white;
+		background: #333;
+		border: 2px solid white;
+		font-weight: ;
+	}
+
+	/**/
+
 	@media only screen {
 		#header {
 			float: none;
@@ -288,6 +346,19 @@
 				</div>
 			</p>
 		</main>
+
+		<form action="http://news.smc.it/frontend/subscribe.aspx" method="post" name="notify" class="notify-me">
+			<p>Tell us your email to be notified when this app will be ready!</p>
+
+			<div>
+			    <input name="email" type="email" placeholder="your@email.com">
+
+			    <input type="hidden" name="list" value="1">
+			    <input type="hidden" name="group" value="63">
+
+			    <button type="submit">Send</button>
+		 	</div>
+		</form>
 
 		<footer>
 			Humbly made by the spry ladies and gents at SMC
