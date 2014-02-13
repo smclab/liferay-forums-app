@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liferay Forums App</title>
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+	<style>
+
+	/* SMC: C30819 */
+
+	body {
+		background: #C30819;
+		color: #EAEAEA;
+		font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+		font-weight: 200;
+		text-align: right;
+	}
+
+	h1, h2, h3, h4 {
+		font-weight: 100;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 5em;
+		line-height: 1em;
+	}
+
+	#wrapper {
+		margin: 3em 10%;
+	}
+
+	#spacer,
+	#icon-wrapper {
+		height: 424px;
+	}
+
+	#spacer {
+		width: 70%;
+		float: left;
+	}
+
+	#header {
+		float: right;
+		min-height: 27em;
+	}
+
+	#main {
+		clear: both;
+	}
+
+	#icon-wrapper {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		overflow: hidden;
+	}
+
+	#icon {
+		height: 1000px;
+		width: 1000px;
+		background: white;
+		position: absolute;
+		bottom: 0px;
+		right: 40%;
+		border-radius: 204px;
+		-webkit-transform-origin: bottom right;
+		-webkit-transform: scale(1);
+	}
+
+	#header,
+	#icon,
+	#icon-wrapper {
+		-webkit-transition: all 600ms ease;
+	}
+
+	@media only screen {
+		#header {
+			margin-top: 0px;
+		}
+
+		#spacer {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 1023px) {
+		#header {
+			margin-top: 400px;
+			min-height: 0px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		#icon {
+			-webkit-transform: scale(0.7);
+		}
+	}
+
+	@media only screen and (max-width: 768px) and (max-height: 400px) {
+		#header {
+			margin-top: 0px;
+			min-height: 19em;
+		}
+
+		#icon-wrapper {
+			-webkit-transform: translateY(-200px);
+		}
+
+		#icon {
+			-webkit-transform: scale(0.3) translateX(-500px);
+		}
+	}
+
+	@media only screen and (max-width: 512px) {
+		#header {
+			margin-top: 200px;
+			min-height: 0px;
+		}
+
+		#icon-wrapper {
+			-webkit-transform: translateY(-200px);
+		}
+
+		#icon {
+			-webkit-transform: scale(0.4) translateX(60px);
+		}
+	}
+
+	/*@media only screen and (max-width: 512px) {
+		#icon {
+			-webkit-transform: scale(0.4) translateX(60px);
+		}
+	}*/
+
+	#tip,
+	#tip-inner {
+		position: absolute;
+		left: 100%;
+		bottom: 0px;
+		margin-left: -102px;
+		background: white;
+		width: 408px;
+		height: 250px;
+		border-bottom-left-radius: 204px;
+		border-bottom-right-radius: 204px;
+	}
+
+	#tip-inner {
+		background: #C30819;
+		margin-left: 0px;
+		height: 260px;
+	}
+
+	#wrapper {
+		position: relative;
+	}
+
+	.square {
+		width: 200px;
+		height: 200px;
+		background: green;
+		position: absolute;
+		border-radius: 30px;
+	}
+
+	.square.db {
+		background: #09203A;
+	}
+
+	.square.b {
+		background: #1D3A69;
+	}
+
+	.square.lb {
+		background: #7CB4E0;
+	}
+
+	#square1 {
+		bottom: 160px;
+		right: 160px;
+	}
+
+	#square2 {
+		bottom: 400px;
+		right: 160px;
+	}
+
+	#square3 {
+		bottom: 160px;
+		right: 400px;
+	}
+
+	#square4 {
+		bottom: 640px;
+		right: 160px;
+	}
+
+	#square5 {
+		bottom: 160px;
+		right: 640px;
+	}
+
+	#square6 {
+		bottom: 400px;
+		right: 400px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="icon-wrapper">
+		<div id="icon">
+			<div id="tip"></div>
+			<div id="tip-inner"></div>
+			<div class="square db" id="square1"></div>
+			<div class="square b" id="square2"></div>
+			<div class="square b" id="square3"></div>
+			<div class="square lb" id="square4"></div>
+			<div class="square lb" id="square5"></div>
+			<div class="square lb" id="square6"></div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div id="spacer"></div>
+		<hgroup id="header">
+			<h1>Liferay<br />Forums</h1>
+			<h2>dedicated<br />to an awesome<br />community</h2>
+		</hgroup>
+
+		<main id="main">
+			HALLO
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			CIAO
+		</main>
+	</div>
+</body>
+</html>
