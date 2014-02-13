@@ -65,13 +65,16 @@
 		right: 40%;
 		border-radius: 200px;
 		-webkit-transform-origin: bottom right;
+		transform-origin: bottom right;
 		-webkit-transform: scale(1);
+		transform: scale(1);
 	}
 
 	#header,
 	#icon,
 	#icon-wrapper {
 		-webkit-transition: all 600ms ease;
+		transition: all 600ms ease;
 	}
 
 	#tip,
@@ -213,6 +216,7 @@
 		font-weight: 100;
 		line-height: 1em;
 		height: 2em;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		vertical-align: middle;
 	}
@@ -266,6 +270,7 @@
 	@media only screen and (max-width: 768px) {
 		#icon {
 			-webkit-transform: scale(0.7);
+			transform: scale(0.7);
 		}
 	}
 
@@ -277,10 +282,12 @@
 
 		#icon-wrapper {
 			-webkit-transform: translateY(-200px);
+			transform: translateY(-200px);
 		}
 
 		#icon {
 			-webkit-transform: scale(0.3) translateX(-500px);
+			transform: scale(0.3) translateX(-500px);
 		}
 	}
 
@@ -292,10 +299,12 @@
 
 		#icon-wrapper {
 			-webkit-transform: translateY(-200px);
+			transform: translateY(-200px);
 		}
 
 		#icon {
 			-webkit-transform: scale(0.4) translateX(60px);
+			transform: scale(0.4) translateX(60px);
 		}
 
 		.soon-list,
@@ -304,12 +313,6 @@
 			text-align: center;
 		}
 	}
-
-	/*@media only screen and (max-width: 512px) {
-		#icon {
-			-webkit-transform: scale(0.4) translateX(60px);
-		}
-	}*/
 	</style>
 </head>
 <body>
