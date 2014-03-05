@@ -231,7 +231,7 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		vertical-align: middle;
-		border-radius: 20px;
+		border-radius: 10px;
 	}
 
 	.notify-me input {
@@ -405,12 +405,14 @@
 			<p>Subscribe to our newsletter to be notified when this app will be ready!</p>
 
 			<div>
-			    <input name="email" type="email" placeholder="your@email.com">
-
 			    <input type="hidden" name="list" value="1">
 			    <input type="hidden" name="group" value="63">
 
-			    <button type="submit">Subscribe</button>
+			    <input name="email" type="email" placeholder="your@email.com"><!--
+
+				TRIM WHITE SPACE :(
+
+			    --><button type="submit">Subscribe</button>
 		 	</div>
 
 		 	<p class="small-print">
