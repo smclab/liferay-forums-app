@@ -262,13 +262,19 @@
 	}
 
 	.notify-me .small-print {
-		margin-top: 1em;
+		margin: 1em 0;
+		padding: 0 1em;
 		font-size: 11px;
 		width: 0px;
 		max-width: none;
 		min-width: 100%;
 		padding: 0 1em;
 		box-sizing: border-box;
+	}
+
+	.notify-me .small-print p {
+		margin: 0.4em 0 0;
+		max-width: none;
 	}
 
 	@media only screen and (min-width: 701px) {
@@ -415,9 +421,11 @@
 			    --><button type="submit">Subscribe</button>
 		 	</div>
 
-		 	<p class="small-print">
-		 		By clicking “Subscribe”, you agree that you have read our <a href="http://www.smc.it/privacy-gen">Data Use Policy</a>.
-		 	</p>
+		 	<div class="small-print">
+		 		<p>By clicking “Subscribe”, you agree that you have read our <a href="http://www.smc.it/privacy-gen">Privacy Policy</a>.</p>
+
+		 		<p>You’ll be able to unsubscribe yourself at any time.</p>
+		 	</div>
 		</form>
 
 		<footer>
